@@ -1,2 +1,50 @@
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
 
-/* Your CSS Code here. */
+/* The Green Outer Border */
+.container {
+  border: 5px solid #00ff00;
+  background-color: #000; /* Black background for the "gaps" */
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Pinkish divider space */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  height: 250px;
+  background-color: #ffb6c1; /* Pinkish row background/border */
+  gap: 5px; /* The dashed line effect */
+}
+
+.box {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  border: 2px dotted #333; /* Matches the dashed look in your image */
+}
+
+/* Row 1 Specifics */
+.row-1 .teal { flex: 1; background-color: #008080; }
+.row-1 .lavender { flex: 2; background-color: #d1c4e9; }
+
+/* Row 2 Specifics (Space-around to create black gutters) */
+.row-2 { justify-content: space-around; background-color: #000; border: 5px solid #ffb6c1;}
+.row-2 .box { width: 30%; height: 90%; align-self: center; }
+.row-2 .orange { background-color: #ff7043; }
+.row-2 .cyan { background-color: #4dd0e1; }
+
+/* Row 3 Specifics (Centered boxes) */
+.row-3 { justify-content: center; background-color: #000; border: 5px solid #ffb6c1; }
+.row-3 .box { width: 30%; height: 90%; align-self: center; }
+.row-3 .pink { background-color: #f06292; }
+.row-3 .lime { background-color: #9ccc65; }
